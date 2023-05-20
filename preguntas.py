@@ -175,8 +175,8 @@ def pregunta_05():
     data.close()
     result = []
     for letra, valores in diccionario.items():
-        maximo = max(valores)
-        minimo = min(valores)
+        maximo = int(max(valores))
+        minimo = int(min(valores))
         result.append((letra, maximo, minimo))
         result.sort()
     
