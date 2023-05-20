@@ -172,13 +172,14 @@ def pregunta_05():
             else:
               diccionario[letra].append(valor)
             # Encontrar los valores máximos y mínimos para cada letra
-        result = []
-        for letra, valores in diccionario.items():
-            maximo = max(valores)
-            minimo = min(valores)
-            result.append((letra, maximo, minimo))
-            result.sort()
     data.close()
+    result = []
+    for letra, valores in diccionario.items():
+        maximo = max(valores)
+        minimo = min(valores)
+        result.append((letra, maximo, minimo))
+        result.sort()
+    
     return result
 
 
